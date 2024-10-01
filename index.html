@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nitesh Patel - Portfolio</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <section class="hero is-primary is-bold">
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <figure class="image is-128x128 is-inline-block">
+          <img class="is-rounded" src="vecteezy_default-profile-account-unknown-icon-black-silhouette_20765399.jpg" alt="Profile Picture">
+        </figure>
+        <h1 class="title">Nitesh Patel</h1>
+        <h2 class="subtitle">Electrical Contractor & Web Developer</h2>
+      </div>
+    </div>
+  </section>
+
+  <!-- Course Progress Section -->
+  <section class="section">
+    <div class="container">
+      <h3 class="title">Course Progress</h3>
+      <div class="columns">
+        <div class="column">
+          <p>JavaScript</p>
+          <progress class="progress is-success" value="70" max="100">70%</progress>
+        </div>
+        <div class="column">
+          <p>.NET Development</p>
+          <progress class="progress is-info" value="85" max="100">85%</progress>
+        </div>
+        <div class="column">
+          <p>HTML/CSS</p>
+          <progress class="progress is-warning" value="40" max="100">40%</progress>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Slider Section -->
+  <section class="section">
+    <div class="container">
+      <h3 class="title">My Projects</h3>
+      <div class="slider">
+        <div class="columns">
+          <div class="column">
+            <figure class="image">
+              <img src="1.png" alt="Project 1">
+            </figure>
+            <p class="has-text-centered">Project 1</p>
+          </div>
+          <div class="column">
+            <figure class="image">
+              <img src="1.png" alt="Project 2">
+            </figure>
+            <p class="has-text-centered">Project 2</p>
+          </div>
+          <div class="column">
+            <figure class="image">
+              <img src="1.png" alt="Project 3">
+            </figure>
+            <p class="has-text-centered">Project 3</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hire Me Section -->
+  <section class="section has-background-light">
+    <div class="container has-text-centered">
+      <h3 class="title">Hire Me</h3>
+      <a class="button is-primary" href="#contact-form">Get in Touch</a>
+    </div>
+  </section>
+
+  <!-- Social Links Section -->
+  <section class="section">
+    <div class="container has-text-centered">
+      <h3 class="title">Follow Me</h3>
+      <a href="https://github.com/your-github" class="button is-link is-outlined">GitHub</a>
+      <a href="https://linkedin.com/in/your-linkedin" class="button is-link is-outlined">LinkedIn</a>
+      <a href="https://twitter.com/your-twitter" class="button is-link is-outlined">Twitter</a>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>&copy; 2024 Nitesh Patel | All rights reserved</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bulma-carousel/dist/js/bulma-carousel.min.js"></script>
+  <script>
+    // Initialize the carousel for the project slider
+    bulmaCarousel.attach('.slider', { slidesToScroll: 1, slidesToShow: 3 });
+  </script>
+</body>
+</html>
