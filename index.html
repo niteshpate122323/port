@@ -8,63 +8,44 @@
 </head>
 <body>
   <!-- Header Section -->
-  <section class="hero is-primary is-bold">
+  <section class="hero is-link">
     <div class="hero-body">
       <div class="container has-text-centered">
         <figure class="image is-128x128 is-inline-block">
           <img class="is-rounded" src="vecteezy_default-profile-account-unknown-icon-black-silhouette_20765399.jpg" alt="Profile Picture">
         </figure>
-        <h1 class="title">Nitesh Patel</h1>
-        <h2 class="subtitle">Web Developer</h2>
+        <p class="title is-3 is-spaced mt-5">Nitesh Patel</p>
+        <p class="subtitle is-5">Skilled in developing web applications, with expertise in creating smooth user interfaces and effective front-end integration, along with strong back-end functionality.</p>
       </div>
     </div>
   </section>
+
+  <div class="notification is-warning is-light has-text-centered">
+    <button class="delete"></button>
+    I certify that, to the best of my knowledge, all the information on this CV is truthful. 
+    I accept complete responsibility for the veracity of the data that has been provided.
+  </div>
 
   <!-- Course Progress Section -->
   <section class="section">
     <div class="container">
-      <h3 class="title">Course Progress</h3>
+      <h3 class="title">Technical Skills</h3>
       <div class="columns">
-        <div class="column">
-          <p>JavaScript</p>
+        <div class="column is-size-7">
+          <p>Frontend - JavaScript, jQuery, CSS, HTML</p>
           <progress class="progress is-success" value="70" max="100">70%</progress>
         </div>
-        <div class="column">
-          <p>.NET Development</p>
-          <progress class="progress is-info" value="85" max="100">85%</progress>
+        <div class="column is-size-7">
+          <p>Backend - C#, ASP.NET, MVC.NET</p>
+          <progress class="progress is-info" value="10" max="100">10%</progress>
         </div>
-        <div class="column">
-          <p>HTML/CSS</p>
-          <progress class="progress is-warning" value="40" max="100">40%</progress>
+        <div class="column is-size-7">
+          <p>CSS Libraries - Bootstrap, Bulma</p>
+          <progress class="progress is-warning" value="70" max="100">70%</progress>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Project Slider Section -->
-  <section class="section">
-    <div class="container">
-      <h3 class="title">My Projects</h3>
-      <div class="slider">
-        <div class="columns">
-          <div class="column">
-            <figure class="image">
-              <img src="1.png" alt="Project 1">
-            </figure>
-            <p class="has-text-centered">Project 1</p>
-          </div>
-          <div class="column">
-            <figure class="image">
-              <img src="1.png" alt="Project 2">
-            </figure>
-            <p class="has-text-centered">Project 2</p>
-          </div>
-          <div class="column">
-            <figure class="image">
-              <img src="1.png" alt="Project 3">
-            </figure>
-            <p class="has-text-centered">Project 3</p>
-          </div>
+        <div class="column is-size-7">
+          <p>Database - MySQL, SQL Server</p>
+          <progress class="progress is-info" value="10" max="100">10%</progress>
         </div>
       </div>
     </div>
@@ -92,13 +73,29 @@
   <footer class="footer">
     <div class="content has-text-centered">
       <p>&copy; 2024 Nitesh Patel | All rights reserved</p>
+      <a href="https://bulma.io">
+        <img
+          src="https://bulma.io/assets/images/made-with-bulma.png"
+          alt="Made with Bulma"
+          width="128"
+          height="24">
+      </a>
     </div>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bulma-carousel/dist/js/bulma-carousel.min.js"></script>
   <script>
-    // Initialize the carousel for the project slider
-    bulmaCarousel.attach('.slider', { slidesToScroll: 1, slidesToShow: 3 });
+
+document.addEventListener('DOMContentLoaded', () => {
+  (document.querySelectorAll('.notification .delete') || []).forEach(($delete) => {
+    const $notification = $delete.parentNode;
+
+    $delete.addEventListener('click', () => {
+      $notification.parentNode.removeChild($notification);
+    });
+  });
+});
+
   </script>
 </body>
 </html>
